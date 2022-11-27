@@ -27,10 +27,11 @@ html {
 body,
 form,
 form > * {
-  color: hsl(249, 10%, 26%);
+  color: var(--DarkBlue);
   font-size: 1.6rem;
   line-height: 1.6;
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
 }
 
 a {
@@ -85,16 +86,18 @@ img {
 .main {
   align-items: center;
   background-image: url('images/bg-intro-desktop.png');
-  background-color: hsl(0, 100%, 74%);
+  background-color: var(--Red);
   display: flex;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   width: 100%;
 }
 
 .main__container {
-  align-items: center;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 5rem;
 }
 
 .main__content {
@@ -180,8 +183,8 @@ img {
 }
 
 .form__input--state--error {
-  background: url(/images/icon-error.svg) right 1.5rem center no-repeat;
-  border: 0.2rem solid hsl(154, 59%, 51%);
+  background: url('/images/icon-error.svg') right 1.5rem center no-repeat;
+  border: 0.2rem solid var(--Red);
 }
 
 .form__input--state--error + .form__label {
